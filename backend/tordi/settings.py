@@ -9,9 +9,16 @@ try:
 except ImportError:
     pass
 
-SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-dev-only-CHANGE-ME-IN-PRODUCTION')
+SECRET_KEY = os.environ.get(
+    'KfDV-u_KEViNp99odpEHk-UUBoibfqNzirzM-JDyxbiSZqgxI-CwWQVzf3frLpOGeVc',
+    'django-insecure-dev-only-CHANGE-ME-IN-PRODUCTION'
+)
 DEBUG = os.environ.get('DEBUG', 'true').lower() == 'true'
-ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '*').split(',')
+ALLOWED_HOSTS = os.environ.get(
+    'ALLOWED_HOSTS',
+    'localhost,127.0.0.1'
+).split(',')
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
