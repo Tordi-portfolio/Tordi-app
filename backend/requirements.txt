@@ -1,0 +1,8 @@
+Django>=5.0,<6.0
+djangorestframework>=3.15
+django-cors-headers>=4.3
+Pillow>=10.0
+python-dotenv>=1.0
+twilio>=9.0  # optional, unused by the core flow
+gunicorn>=22.0  # production WSGI server (used by Render, not local dev)
+whitenoise>=6.6  # serves Django admin's static files in production
